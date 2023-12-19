@@ -6,7 +6,7 @@ const heavyWork = () => {
 };
 
 export function UseStateHook2() {
-  // 이런식으로 초기값에 바로 함수를 바로 인자로 넣어버리면 함수 호출 될때마다 초기값 안에 작업이 실행되기때문에 비효율적이다
+  // 이런식으로 초기값에 바로 함수를 인자로 넣어버리면 함수 호출 될때마다 초기값 안에 작업이 실행되기때문에 비효율적이다
   //   const [names, setNames] = useState(heavyWork());
 
   // useState의 초기값을 첫 렌더링시에만 불러오고 싶을때는 콜백형태로 원하는 값을 리턴해주면 된다.
