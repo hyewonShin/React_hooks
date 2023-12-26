@@ -1,8 +1,11 @@
-import { UseStateHook } from "./hooks/useState";
-import { UseStateHook2 } from "./hooks/useState2";
+import { useState } from "react";
+import "./App.css";
+import Page from "./component/useContext.jsx/Page";
 
 function App() {
-  return <UseStateHook2 />;
+  const [isDark, setIsDark] = useState(false);
+
+  return <Page isDark={isDark} setIsDark={setIsDark} />;
 }
 
 export default App;
