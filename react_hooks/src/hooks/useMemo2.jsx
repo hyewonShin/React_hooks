@@ -4,7 +4,10 @@ function UseMemo2() {
   const [number, setNumber] = useState(0);
   const [isKorea, setIsKorea] = useState(true);
 
+  // 원시타입
   // const location = isKorea ? "한국" : "외국";
+
+  // 객체타입
   // const location = {
   //   country: isKorea ? "한국" : "외국",
   // };
@@ -17,6 +20,7 @@ function UseMemo2() {
 
   useEffect(() => {
     console.log("useEffect 호출 >>>");
+    // 뭔가 오래걸리는 작업
   }, [location]);
 
   return (
