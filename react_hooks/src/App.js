@@ -1,19 +1,9 @@
-import { useState } from "react";
-import "./App.css";
-import Page from "./component/useContext.jsx/Page";
-import { ThemeContext } from "./context/ThemeContext";
-import { UserContext } from "./context/UserContext";
+import React from "react";
+import UseMemo from "./hooks/useMemo";
+import UseMemo2 from "./hooks/useMemo2";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
-
-  return (
-    <UserContext.Provider value={"고객"}>
-      <ThemeContext.Provider value={{ isDark, setIsDark }}>
-        <Page />
-      </ThemeContext.Provider>
-    </UserContext.Provider>
-  );
+  return <UseMemo2 />;
 }
 
 export default App;
