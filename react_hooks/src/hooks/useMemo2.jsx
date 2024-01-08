@@ -16,7 +16,7 @@ function UseMemo2() {
     return {
       country: isKorea ? "한국" : "외국",
     };
-  });
+  }, [isKorea]);
 
   useEffect(() => {
     console.log("useEffect 호출 >>>");
